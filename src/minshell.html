@@ -56,6 +56,11 @@
             saveAs(blob, localFSname);
         }
     </script>
+    <script type="text/javascript">
+      window.addEventListener('keydown', function (e) {
+        e.preventDefault()
+      })
+    </script>
     </head>
     <body>
         <canvas class=emscripten id=canvas oncontextmenu=event.preventDefault() tabindex=-1></canvas>
